@@ -1,0 +1,168 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Science+Gothic:wght@100..900&display=swap');
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT STYLES */
+*{
+    --blue: rgba(95, 158, 160, 0.85);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --red: rgba(148, 55, 55, 0.85);
+
+    --title-font: "Science Gothic", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+/* SR TEXT */
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+ 
+.sr-only:focus{
+    position:static;
+    width:auto;
+    height:auto;
+}
+
+/* TEXT STYLES */
+h1, h2, a{
+    font-family: var(--title-font);
+}
+h1{
+    font-size: larger;
+}
+h2{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--red);
+    width: max-content;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline 2px;
+}
+p{
+    font-family: var(--body-font);
+    line-height: 1.3;
+}
+
+footer > p{
+    color: var(--white);
+}
+#tabs > div > p{
+    color: var(--black);
+}
+
+/* PAGE STYLES */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+nav li{
+    text-align: center;
+}
+
+main{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+html{
+    background-color: burlywood;
+}
+
+#overview{
+    margin: 2rem auto;
+    max-width: 60%;
+}
+
+#typeTime{
+    margin: auto;
+    width: 500px;
+}
+
+.slickCarousel p{
+    margin: 0.5rem;
+    text-align: center;
+}
+
+footer{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 2rem;
+}

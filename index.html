@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="slick/slick.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <title>GIT 418 Final</title>
+</head>
+<body>
+    <a href="#main" class="sr-only">Skip to content</a>
+    <header>
+        <h1>A Brief History of Keyboards</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview" class="sr-only">Overview</a></li>
+                <li><a href="#typeTime" class="sr-only">Type through Time</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" aria-label="Toggle light/dark mode">
+            <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
+                <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
+            </svg>
+        </button>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>What makes a Keyboard?</h2>
+            <p>Modern keyboards trace their roots back to the mechanical typewriter, invented in the 19th century. Early typewriters used complex mechanical linkages: pressing a key would swing a metal typebar to strike an inked ribbon against paper. These machines required significant force, had a distinct tactile feel, and introduced design features we still use today—like the QWERTY layout. As computers emerged in the mid-20th century, early keyboards borrowed heavily from typewriter mechanisms but adapted them for electronic input. This led to the first mechanical computer keyboards, which used individual mechanical switches under each key. These switches offered durability, strong tactile feedback, and reliability—qualities prized in professional and industrial settings.<br><br>
+            
+            In the 1980s and beyond, manufacturers sought cheaper, quieter, and more compact alternatives, leading to the rise of the membrane keyboard. Instead of individual switches, membrane designs use flexible pressure pads and conductive traces printed on thin layers of plastic. When you press a key, the top membrane layer collapses onto the bottom layer, completing an electrical circuit. While more affordable to produce and slimmer in profile, membrane keyboards typically offer a softer, less tactile feel compared to mechanical switches. Despite this, they became the dominant keyboard style for mass-market computers, while mechanical keyboards experienced a resurgence later among enthusiasts who value the precision and feel reminiscent of their typewriter ancestry.</p>
+        </section>
+        
+        <section id="typeTime">
+            <h2>Type through Time</h2>
+            <div class="slickCarousel">
+                <!-- <div>
+                    <img src="images/typewriter.jpg" alt="" height="500px">
+                    <p>Typewriter</p>
+                </div>
+                <div>
+                    <img src="images/mechanical_keyboard.jpg" alt="" height="500px">
+                    <p>Mechanical</p>
+                </div>
+                <div>
+                    <img src="images/scissor_switch.jpg" alt="" height="500px">
+                    <p>Scissor Switch</p>
+                </div>
+                <div>
+                    <img src="images/membrane.jpg" alt="" height="500px">
+                    <p>Membrane</p>
+                </div> -->
+            </div>    
+        </section>
+        
+        <section id="typeTabs">
+            <h2 hidden>Tab List</h2>
+            <div id="tabs">
+                <ul id="tabList">
+                    <!-- <li><a href="#tabs-1">Typewriter</a></li> -->
+                </ul>
+                <!-- <div id="tabs-1"><p></p></div> -->
+            </div>
+        </section>
+
+        <div id="dialog" title="ERROR">
+            <p>Something went wrong calling the Postman API. Some images and text may not display, or display incorrectly.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; <span>2022</span> Robert Danforth</p>
+    </footer>
+</body>
+</html>
